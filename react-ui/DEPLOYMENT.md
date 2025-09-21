@@ -54,6 +54,7 @@ Vercel works great with React + Vite applications.
    - **Name:** liquidround-landing
    - **Root Directory:** `react-ui`
    - **Build Command:** `npm install && npm run build`
+   - **Start Command:** `npm run preview`
    - **Publish Directory:** `dist`
    - **Node Version:** 18 or higher (recommended: 20)
 5. **Create Static Site**
