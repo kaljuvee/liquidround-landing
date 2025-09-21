@@ -1,0 +1,19 @@
+# Render Blueprint Configuration
+# Deploy LiquidRound NextJS Landing Page
+
+services:
+  - type: web
+    name: liquidround-landing
+    env: static
+    rootDir: nextjs-ui
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./out
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_APP_URL
+        value: https://app.liquidround.com

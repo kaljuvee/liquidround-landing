@@ -95,14 +95,25 @@ Vercel is built for NextJS and provides the best performance.
 
 ### Deploy NextJS to Render
 
+**Method 1: Manual Setup (Recommended)**
+
 1. **Create a new Static Site** on [Render](https://render.com)
 2. **Connect your GitHub repository**
 3. **Configure the service:**
    - **Root Directory:** `nextjs-ui`
    - **Build Command:** `npm install && npm run build`
-   - **Publish Directory:** `out` (for static export)
+   - **Publish Directory:** `out`
    - **Node Version:** 18 or higher
 4. **Deploy:** Render will automatically build and deploy
+
+**Method 2: Using render.yaml (Automated)**
+
+1. **Use the included render.yaml** in the repository root
+2. **Go to Render Dashboard** → **"New +"** → **"Blueprint"**
+3. **Connect repository** and Render will auto-configure from render.yaml
+4. **Deploy:** Fully automated setup
+
+**See `nextjs-ui/RENDER_DEPLOYMENT.md` for detailed instructions, troubleshooting, and custom domain setup.**
 
 ### Deploy FastHTML to Render
 
