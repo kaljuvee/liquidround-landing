@@ -1,10 +1,10 @@
-# NextJS Deployment Guide
+# React + Vite Deployment Guide
 
-This guide covers deploying the LiquidRound NextJS landing page to various platforms.
+This guide covers deploying the LiquidRound React landing page to various platforms.
 
 ## Deploy to Vercel (Recommended)
 
-Vercel is the easiest way to deploy NextJS applications.
+Vercel works great with React + Vite applications.
 
 ### Method 1: Vercel CLI
 
@@ -13,9 +13,9 @@ Vercel is the easiest way to deploy NextJS applications.
    npm install -g vercel
    ```
 
-2. **Navigate to the NextJS directory:**
+2. **Navigate to the React directory:**
    ```bash
-   cd nextjs-ui
+   cd react-ui
    ```
 
 3. **Deploy:**
@@ -40,7 +40,7 @@ Vercel is the easiest way to deploy NextJS applications.
 3. **Import your GitHub repository**
 4. **Configure project:**
    - Framework Preset: Vite
-   - Root Directory: `nextjs-ui/liquidround-app`
+   - Root Directory: `react-ui`
    - Build Command: `npm run build`
    - Output Directory: `dist`
 5. **Deploy**
@@ -52,7 +52,7 @@ Vercel is the easiest way to deploy NextJS applications.
 3. **Connect your GitHub repository**
 4. **Configure the service:**
    - **Name:** liquidround-landing
-   - **Root Directory:** `nextjs-ui`
+   - **Root Directory:** `react-ui`
    - **Build Command:** `npm install && npm run build`
    - **Publish Directory:** `dist`
 5. **Create Static Site**
@@ -69,7 +69,7 @@ Render will automatically:
 2. **Click "New site from Git"**
 3. **Connect to GitHub** and select your repository
 4. **Configure build settings:**
-   - **Base directory:** `nextjs-ui`
+   - **Base directory:** `react-ui`
    - **Build command:** `npm run build`
    - **Publish directory:** `dist`
 5. **Deploy site**
@@ -80,7 +80,7 @@ Render will automatically:
 2. **Choose "Host web app"**
 3. **Connect your GitHub repository**
 4. **Configure build settings:**
-   - **App root directory:** `nextjs-ui`
+   - **App root directory:** `react-ui`
    - **Build command:** `npm run build`
    - **Output directory:** `dist`
 5. **Save and deploy**

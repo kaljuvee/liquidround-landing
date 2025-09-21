@@ -6,26 +6,26 @@ Professional landing page for LiquidRound, an AI-Native M&A + IPO Marketplace pl
 
 ```
 liquidround-landing/
-├── nextjs-ui/          # NextJS/React implementation
+├── react-ui/           # React + Vite implementation
 ├── fasthtml-ui/        # FastHTML/Python implementation
 └── README.md          # This file
 ```
 
 ## Implementations
 
-### NextJS Implementation (`nextjs-ui/`)
+### React Implementation (`react-ui/`)
 
-Modern React-based implementation using NextJS framework with Tailwind CSS styling.
+Modern React-based implementation using Vite build tool with Tailwind CSS styling.
 
 **Technology Stack:**
-- React 18 with Vite
-- Tailwind CSS
+- React 19 with Vite 6
+- Tailwind CSS 4
 - shadcn/ui components
 - Lucide React icons
 
 **Running locally:**
 ```bash
-cd nextjs-ui
+cd react-ui
 npm install
 npm run dev
 ```
@@ -59,16 +59,20 @@ Both implementations include:
 
 ## Deployment
 
-### Deploy NextJS to Vercel
+### Deploy React to Vercel
 
-1. **Install Vercel CLI:**
+Vercel works great with React + Vite applications.
+
+**Method 1: Vercel CLI**
+
+1. **Install Vercel CLI globally:**
    ```bash
    npm i -g vercel
    ```
 
-2. **Deploy from the NextJS directory:**
+2. **Deploy from the React directory:**
    ```bash
-   cd nextjs-ui
+   cd react-ui
    vercel
    ```
 
@@ -82,12 +86,12 @@ Both implementations include:
    vercel --prod
    ```
 
-### Deploy NextJS to Render
+### Deploy React to Render
 
 1. **Create a new Static Site** on [Render](https://render.com)
 2. **Connect your GitHub repository**
 3. **Configure the service:**
-   - **Root Directory:** `nextjs-ui`
+   - **Root Directory:** `react-ui`
    - **Build Command:** `npm install && npm run build`
    - **Publish Directory:** `dist`
 4. **Deploy:** Render will automatically build and deploy
@@ -137,7 +141,7 @@ Both implementations include:
 
 Choose the implementation that best fits your technology stack:
 
-**For JavaScript/React developers:** Use the NextJS implementation
+**For JavaScript/React developers:** Use the React + Vite implementation
 **For Python developers:** Use the FastHTML implementation
 
 Both provide identical functionality and visual design, just using different underlying technologies.
