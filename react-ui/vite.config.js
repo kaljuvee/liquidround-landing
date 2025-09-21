@@ -11,4 +11,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    host: true,
+    port: process.env.PORT || 4173,
+    strictPort: false,
+    allowedHosts: 'all'
+  },
+  server: {
+    host: true,
+    port: 5173
+  }
 })
