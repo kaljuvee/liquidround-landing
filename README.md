@@ -7,7 +7,6 @@ Professional landing page for LiquidRound, an AI-Native M&A + IPO Marketplace pl
 ```
 liquidround-landing/
 ├── nextjs-ui/          # NextJS/React implementation
-│   └── liquidround-app/
 ├── fasthtml-ui/        # FastHTML/Python implementation
 └── README.md          # This file
 ```
@@ -26,7 +25,7 @@ Modern React-based implementation using NextJS framework with Tailwind CSS styli
 
 **Running locally:**
 ```bash
-cd nextjs-ui/liquidround-app
+cd nextjs-ui
 npm install
 npm run dev
 ```
@@ -69,7 +68,7 @@ Both implementations include:
 
 2. **Deploy from the NextJS directory:**
    ```bash
-   cd nextjs-ui/liquidround-app
+   cd nextjs-ui
    vercel
    ```
 
@@ -88,7 +87,7 @@ Both implementations include:
 1. **Create a new Static Site** on [Render](https://render.com)
 2. **Connect your GitHub repository**
 3. **Configure the service:**
-   - **Root Directory:** `nextjs-ui/liquidround-app`
+   - **Root Directory:** `nextjs-ui`
    - **Build Command:** `npm install && npm run build`
    - **Publish Directory:** `dist`
 4. **Deploy:** Render will automatically build and deploy
