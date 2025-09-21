@@ -37,15 +37,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section 
-        className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20"
-        style={{
-          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.1), rgba(255, 255, 255, 0.9)), url('/assets/wave-background.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+      <section className="hero-section relative bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-medium text-green-700 mb-6 leading-tight">
