@@ -22,7 +22,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(rgba(59, 130, 246, 0.1), rgba(255, 255, 255, 0.9)), url('/static/london-skyline-1.jpg');
+    background: linear-gradient(rgba(59, 130, 246, 0.1), rgba(255, 255, 255, 0.9)), url('/static/wave-background.png');
     background-size: cover;
     background-position: center;
     min-height: 80vh;

@@ -41,10 +41,10 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/london-skyline-1.jpg"
-            alt="London Financial District"
+            src="/assets/wave-background.png"
+            alt="Abstract Wave Background"
             fill
-            className="object-cover opacity-10"
+            className="object-cover opacity-30"
             priority
           />
         </div>
