@@ -512,23 +512,7 @@ def AIAgentTeam():
         id="how-it-works"
     )
 
-def BackedBy():
-    return Section(
-        Div(
-            H2("Backed by Leading Investors"),
-            Div(
-                Div(
-                    P("Supported by "),
-                    A("Antler", href="https://antler.co", target="_blank", style="color: #059669; text-decoration: underline;"),
-                    P(", the global early-stage venture capital firm backing exceptional founders building innovative fintech solutions."),
-                    cls="card"
-                ),
-                style="display: flex; justify-content: center;"
-            ),
-            cls="container"
-        ),
-        cls="section bg-light"
-    )
+
 
 def Contact():
     return Section(
@@ -574,7 +558,6 @@ def get():
                 TargetUsers(),
                 Features(),
                 AIAgentTeam(),
-                BackedBy(),
                 Contact(),
                 cls="main-content"
             )

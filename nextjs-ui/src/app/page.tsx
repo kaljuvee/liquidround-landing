@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Users, Brain, TrendingUp, Shield, Mail, MapPin } from 'lucide-react'
 
@@ -38,16 +37,15 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/assets/wave-background.png"
-            alt="Abstract Wave Background"
-            fill
-            className="object-cover opacity-30"
-            priority
-          />
-        </div>
+      <section 
+        className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20"
+        style={{
+          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.1), rgba(255, 255, 255, 0.9)), url('/assets/wave-background.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-medium text-green-700 mb-6 leading-tight">
@@ -175,25 +173,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Backed By */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-medium text-green-700 mb-8">
-            Backed by Leading Investors
-          </h2>
-          <p className="text-lg text-gray-600">
-            Supported by{' '}
-            <Link 
-              href="https://antler.co" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-green-700 hover:text-green-800 font-medium underline"
-            >
-              Antler
-            </Link>
-          </p>
-        </div>
-      </section>
+
 
       {/* Contact */}
       <section id="contact" className="py-16 bg-blue-600 text-white">
