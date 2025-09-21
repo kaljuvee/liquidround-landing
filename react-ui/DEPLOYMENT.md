@@ -55,6 +55,7 @@ Vercel works great with React + Vite applications.
    - **Root Directory:** `react-ui`
    - **Build Command:** `npm install && npm run build`
    - **Publish Directory:** `dist`
+   - **Node Version:** 18 or higher (recommended: 20)
 5. **Create Static Site**
 
 Render will automatically:
