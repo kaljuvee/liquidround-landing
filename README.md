@@ -6,29 +6,37 @@ Professional landing page for LiquidRound, an AI-Native M&A + IPO Marketplace pl
 
 ```
 liquidround-landing/
-├── react-ui/           # React + Vite implementation
-├── fasthtml-ui/        # FastHTML/Python implementation
-└── README.md          # This file
+├── nextjs-ui/         # NextJS implementation (recommended)
+├── fasthtml-ui/       # FastHTML/Python implementation
+└── README.md         # This file
 ```
 
 ## Implementations
 
-### React Implementation (`react-ui/`)
+### NextJS Implementation (`nextjs-ui/`) - **RECOMMENDED**
 
-Modern React-based implementation using Vite build tool with Tailwind CSS styling.
+Modern NextJS implementation with TypeScript, Tailwind CSS, and optimized performance.
 
 **Technology Stack:**
-- React 19 with Vite 6
-- Tailwind CSS 4
-- shadcn/ui components
-- Lucide React icons
+- NextJS 15.5.3 with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Lucide React for icons
+- Static Site Generation (SSG)
 
 **Running locally:**
 ```bash
-cd react-ui
+cd nextjs-ui
 npm install
 npm run dev
 ```
+
+**Why NextJS?**
+- ✅ **No host restrictions** - Works with any custom domain
+- ✅ **Optimized performance** - 122kB first load, static generation
+- ✅ **SEO-friendly** - Server-side rendering and static generation
+- ✅ **Easy deployment** - Perfect for Vercel, Render, Netlify
+- ✅ **Production-ready** - Built for enterprise applications
 
 ### FastHTML Implementation (`fasthtml-ui/`)
 
@@ -59,9 +67,9 @@ Both implementations include:
 
 ## Deployment
 
-### Deploy React to Vercel
+### Deploy NextJS to Vercel (Recommended)
 
-Vercel works great with React + Vite applications.
+Vercel is built for NextJS and provides the best performance.
 
 **Method 1: Vercel CLI**
 
@@ -70,30 +78,29 @@ Vercel works great with React + Vite applications.
    npm i -g vercel
    ```
 
-2. **Deploy from the React directory:**
+2. **Deploy from the NextJS directory:**
    ```bash
-   cd react-ui
+   cd nextjs-ui
    vercel
    ```
 
 3. **Follow the prompts:**
    - Link to existing project or create new
-   - Set build command: `npm run build`
-   - Set output directory: `dist`
+   - Vercel will auto-detect NextJS settings
 
 4. **For subsequent deployments:**
    ```bash
    vercel --prod
    ```
 
-### Deploy React to Render
+### Deploy NextJS to Render
 
 1. **Create a new Static Site** on [Render](https://render.com)
 2. **Connect your GitHub repository**
 3. **Configure the service:**
-   - **Root Directory:** `react-ui`
+   - **Root Directory:** `nextjs-ui`
    - **Build Command:** `npm install && npm run build`
-   - **Publish Directory:** `dist`
+   - **Publish Directory:** `out` (for static export)
    - **Node Version:** 18 or higher
 4. **Deploy:** Render will automatically build and deploy
 
@@ -140,12 +147,24 @@ Vercel works great with React + Vite applications.
 
 ## Development
 
-Choose the implementation that best fits your technology stack:
+**For most use cases:** Use the **NextJS implementation** - it's production-ready, optimized, and handles custom domains perfectly.
 
-**For JavaScript/React developers:** Use the React + Vite implementation
-**For Python developers:** Use the FastHTML implementation
+**For Python developers:** Use the FastHTML implementation if you prefer Python-based development.
 
 Both provide identical functionality and visual design, just using different underlying technologies.
+
+## Performance
+
+### NextJS Implementation
+- **First Load JS:** 122kB
+- **Static Generation:** All pages pre-rendered
+- **Image Optimization:** Automatic WebP conversion
+- **SEO Optimized:** Meta tags and structured data
+
+### FastHTML Implementation  
+- **Server-side Rendering:** Fast initial page loads
+- **Python-based:** Easy to customize for Python developers
+- **Lightweight:** Minimal JavaScript footprint
 
 ## License
 
