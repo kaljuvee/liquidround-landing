@@ -1,133 +1,148 @@
 # LiquidRound Landing Page
 
-A professional, modern landing page for LiquidRound - an AI-native M&A + IPO marketplace that empowers companies and professionals to navigate deal processes with intelligent automation.
+Professional landing page for LiquidRound, an AI-Native M&A + IPO Marketplace platform. This repository contains two complete implementations using different technologies.
 
-## 🚀 Live Demo
+## Project Structure
 
-The landing page has been deployed and is ready for publication. Click the publish button in the UI to make it live.
+```
+liquidround-landing/
+├── nextjs-ui/          # NextJS/React implementation
+│   └── liquidround-app/
+├── fasthtml-ui/        # FastHTML/Python implementation
+└── README.md          # This file
+```
 
-## 📋 Project Overview
+## Implementations
 
-### Key Features
+### NextJS Implementation (`nextjs-ui/`)
 
-- **Modern Design**: Clean, professional layout inspired by leading fintech platforms
-- **Blue Color Scheme**: Professional blue and light blue theme with London cityscape imagery
-- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
-- **AI-Focused Messaging**: Emphasizes AI agent capabilities and automation
-- **Target User Clarity**: Clearly addresses SMEs, startups, buyers, sellers, and professional advisors
-- **Trust Signals**: Prominently features Antler backing and London presence
+Modern React-based implementation using NextJS framework with Tailwind CSS styling.
+
+**Technology Stack:**
+- React 18 with Vite
+- Tailwind CSS
+- shadcn/ui components
+- Lucide React icons
+
+**Running locally:**
+```bash
+cd nextjs-ui/liquidround-app
+npm install
+npm run dev
+```
+
+### FastHTML Implementation (`fasthtml-ui/`)
+
+Python-based implementation using the FastHTML framework for server-side rendering.
+
+**Technology Stack:**
+- Python FastHTML
+- Custom CSS styling
+- Uvicorn ASGI server
+
+**Running locally:**
+```bash
+cd fasthtml-ui
+pip3 install -r requirements.txt
+python3 main.py
+```
+
+## Design Features
+
+Both implementations include:
+
+- **Green Color Scheme**: Consistent `#059669` green branding throughout
+- **London Financial District Imagery**: Professional background images
+- **Responsive Layout**: Mobile-first design for all devices
+- **AI Agent Advisory Team**: Detailed showcase of IPO and M&A AI agents
+- **Contact Information**: London office at 32-38 Leman St, London E1 8EW
+- **Demo Integration**: Links to https://liquidround.streamlit.app/
+
+## Deployment
+
+### Deploy NextJS to Vercel
+
+1. **Install Vercel CLI:**
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy from the NextJS directory:**
+   ```bash
+   cd nextjs-ui/liquidround-app
+   vercel
+   ```
+
+3. **Follow the prompts:**
+   - Link to existing project or create new
+   - Set build command: `npm run build`
+   - Set output directory: `dist`
+
+4. **For subsequent deployments:**
+   ```bash
+   vercel --prod
+   ```
+
+### Deploy NextJS to Render
+
+1. **Create a new Static Site** on [Render](https://render.com)
+2. **Connect your GitHub repository**
+3. **Configure the service:**
+   - **Root Directory:** `nextjs-ui/liquidround-app`
+   - **Build Command:** `npm install && npm run build`
+   - **Publish Directory:** `dist`
+4. **Deploy:** Render will automatically build and deploy
+
+### Deploy FastHTML to Render
+
+1. **Create a new Web Service** on [Render](https://render.com)
+2. **Connect your GitHub repository**
+3. **Configure the service:**
+   - **Root Directory:** `fasthtml-ui`
+   - **Build Command:** `pip install -r requirements.txt`
+   - **Start Command:** `python main.py`
+   - **Environment:** Python 3
+4. **Deploy:** Render will automatically build and deploy
+
+### Deploy FastHTML to Railway
+
+1. **Create a new project** on [Railway](https://railway.app)
+2. **Connect your GitHub repository**
+3. **Configure deployment:**
+   - Railway will automatically detect Python and install from `requirements.txt`
+   - Start command: `python main.py`
+   - Root directory: `fasthtml-ui`
+
+## Key Features
 
 ### Content Sections
+- **Hero Section**: "AI-driven Platform for Every Deal Journey"
+- **Target Users**: SMEs, startups, buyers, sellers, professional advisors
+- **Meet your AI Agent Advisory Team**: IPO and M&A workflow agents
+- **Contact Information**: London office details and demo links
 
-1. **Hero Section**: Clear value proposition with call-to-action
-2. **Target Users**: Visual representation of user categories
-3. **Features**: AI agent capabilities and core functionality
-4. **How It Works**: Two-tier supervisor graph explanation
-5. **Backed By**: Antler investor backing
-6. **Contact**: London office details and contact information
+### AI Agents
+**IPO Path:**
+- Market-Window Agent
+- Comps-Screener Agent  
+- Direct-List Scorer Agent
+- Readiness-Coordinator Agent
 
-## 🛠 Technical Stack
+**M&A Path:**
+- Target-Finder Agent
+- Valuer Agent
+- Synergy-Analyst Agent
+- Diligence-Coordinator Agent
 
-- **Framework**: React 18 with Vite
-- **Styling**: Tailwind CSS with custom components
-- **UI Components**: shadcn/ui component library
-- **Icons**: Lucide React icons
-- **Deployment**: Ready for static hosting platforms
+## Development
 
-## 📁 Project Structure
+Choose the implementation that best fits your technology stack:
 
-```
-liquidround-app/
-├── public/                 # Static assets
-├── src/
-│   ├── assets/            # Images and media files
-│   │   ├── london-skyline-1.jpg
-│   │   ├── london-skyline-2.jpg
-│   │   ├── london-skyline-3.jpg
-│   │   └── antler-logo.png
-│   ├── components/        # React components
-│   │   └── ui/           # shadcn/ui components
-│   ├── App.jsx           # Main application component
-│   ├── App.css           # Custom styles and Tailwind config
-│   └── main.jsx          # Application entry point
-├── package.json          # Dependencies and scripts
-└── vite.config.js        # Vite configuration
-```
+**For JavaScript/React developers:** Use the NextJS implementation
+**For Python developers:** Use the FastHTML implementation
 
-## 🎨 Design Features
+Both provide identical functionality and visual design, just using different underlying technologies.
 
-### Visual Elements
-- London financial district background imagery
-- Blue gradient overlays and accents
-- Professional typography hierarchy
-- Hover effects and smooth transitions
-- Card-based layout for features and content
-
-### User Experience
-- Smooth scrolling navigation
-- Clear call-to-action buttons
-- Responsive grid layouts
-- Professional contact information display
-- Trust signals with investor backing
-
-## 🔗 Key Links
-
-- **Demo Platform**: https://liquidround.streamlit.app/
-- **Contact Email**: info@liquidround.com
-- **London Office**: 155 Minories Street, Flat 275, London EC3N 1AD, United Kingdom
-
-## 📱 Responsive Design
-
-The landing page is fully responsive and optimized for:
-- Desktop computers (1200px+)
-- Tablets (768px - 1199px)
-- Mobile phones (320px - 767px)
-
-## 🚀 Deployment
-
-The application is built using Vite and can be deployed to any static hosting platform:
-
-1. **Build**: `npm run build`
-2. **Deploy**: Upload `dist/` folder to hosting platform
-3. **Configure**: Set up custom domain if needed
-
-## 📊 Performance
-
-- **Fast Loading**: Optimized images and efficient React components
-- **SEO Ready**: Proper meta tags and semantic HTML structure
-- **Accessibility**: WCAG compliant with proper ARIA labels
-- **Mobile Optimized**: Touch-friendly interface and responsive design
-
-## 🎯 Requirements Compliance
-
-✅ **Design Inspiration**: Incorporated elements from OffDeal.io, Harmonic.ai, and PrimaryBid.com
-✅ **Messaging**: Avoids "investment bank" and "VCs" terminology as requested
-✅ **Target Users**: Emphasizes SMEs, startups, buyers, sellers, and professional advisors
-✅ **Demo Link**: Properly linked to Streamlit application
-✅ **Contact Information**: Includes London address and email
-✅ **Visual Assets**: London imagery and Antler logo integration
-✅ **Color Scheme**: Blue and light blue theme throughout
-✅ **Product Description**: Comprehensive "How It Works" section
-
-## 🔧 Development
-
-To run the project locally:
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 📄 License
+## License
 
 This project is proprietary to LiquidRound. All rights reserved.
-
----
-
-**Built with ❤️ for LiquidRound - Transforming M&A and IPO processes with AI**
