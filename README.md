@@ -56,7 +56,7 @@ Both implementations include:
 - **Responsive Layout**: Mobile-first design for all devices
 - **AI Agent Advisory Team**: Detailed showcase of IPO and M&A AI agents
 - **Contact Information**: London office at 32-38 Leman St, London E1 8EW
-- **Demo Integration**: Links to https://liquidround.streamlit.app/
+- **Demo Integration**: Links to https://app.liquidround.com/
 
 ## Deployment
 

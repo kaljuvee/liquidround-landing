@@ -378,7 +378,7 @@ def Navbar():
                 Li(A("Features", href="#features")),
                 Li(A("How It Works", href="#how-it-works")),
                 Li(A("Contact", href="#contact")),
-                Li(A("Get Started", href="https://liquidround.streamlit.app/", target="_blank", cls="btn btn-primary")),
+                Li(A("Get Started", href="https://app.liquidround.com/", target="_blank", cls="btn btn-primary")),
                 cls="nav-links"
             ),
             cls="container"
@@ -397,7 +397,7 @@ def Hero():
                 ),
                 P("Prep your company for IPO, direct-listing, or run a full buyer-led or seller-led M&A process—all powered by specialist AI agents that pull live market data, build documents, and simulate negotiations."),
                 Div(
-                    A("Get Started", href="https://liquidround.streamlit.app/", target="_blank", cls="btn btn-primary"),
+                    A("Get Started", href="https://app.liquidround.com/", target="_blank", cls="btn btn-primary"),
                     A("Schedule Demo", href="#contact", cls="btn btn-secondary")
                 ),
                 cls="container"
@@ -536,7 +536,7 @@ def Contact():
             Div(
                 H2("Ready to Transform Your Deal Process?"),
                 P("Get in touch with our team to see how LiquidRound can accelerate your M&A or IPO journey."),
-                A("Start Your Demo", href="https://liquidround.streamlit.app/", target="_blank", cls="btn btn-primary"),
+                A("Start Your Demo", href="https://app.liquidround.com/", target="_blank", cls="btn btn-primary"),
                 cls="container"
             ),
             Div(
