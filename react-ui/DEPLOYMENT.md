@@ -57,6 +57,8 @@ Vercel works great with React + Vite applications.
    - **Start Command:** `npm run preview`
    - **Publish Directory:** `dist`
    - **Node Version:** 18 or higher (recommended: 20)
+
+**Note:** The preview script is configured to bind to `0.0.0.0:$PORT` for proper Render deployment.
 5. **Create Static Site**
 
 Render will automatically:
