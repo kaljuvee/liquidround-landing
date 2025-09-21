@@ -104,14 +104,11 @@ function App() {
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Prep your company for IPO, direct-listing, or run a full buyer-led or seller-led M&A process—all powered by specialist AI agents that pull live market data, build documents, and simulate negotiations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+            <div className="flex justify-center">
+              <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700 text-white text-xl px-12 py-4 h-auto">
                 <a href="https://app.liquidround.com/" target="_blank" rel="noopener noreferrer">
-                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                  Get Started <ArrowRight className="ml-3 h-6 w-6" />
                 </a>
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-blue-200 hover:bg-blue-50">
-                Schedule Demo
               </Button>
             </div>
           </div>
