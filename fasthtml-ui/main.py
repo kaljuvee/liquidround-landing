@@ -547,7 +547,7 @@ def Contact():
                 ),
                 Div(
                     H3("London Office"),
-                    P("155 Minories Street\nFlat 275, London EC3N 1AD\nUnited Kingdom"),
+                    P("32-38 Leman St\nLondon E1 8EW\nUnited Kingdom"),
                     cls="contact-card"
                 ),
                 cls="contact-grid container"

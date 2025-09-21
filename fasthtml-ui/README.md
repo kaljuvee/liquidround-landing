@@ -21,13 +21,59 @@ This is a FastHTML version of the LiquidRound AI-Native M&A + IPO Marketplace la
 
 ```bash
 # Install dependencies
-pip3 install python-fasthtml
+pip3 install -r requirements.txt
 
 # Run the application
 python3 main.py
 ```
 
 The application will be available at `http://localhost:5001`
+
+## Production Deployment
+
+### Deploy to Render
+
+1. **Create a new Web Service** on [Render](https://render.com)
+2. **Connect your GitHub repository** containing the FastHTML code
+3. **Configure the service:**
+   - **Build Command:** `pip install -r requirements.txt`
+   - **Start Command:** `python main.py`
+   - **Environment:** Python 3
+   - **Root Directory:** `fasthtml-ui` (if deploying from the full repo)
+
+4. **Environment Variables** (if needed):
+   - `PORT`: Render will automatically set this
+   - `HOST`: Set to `0.0.0.0` (FastHTML handles this automatically)
+
+5. **Deploy:** Render will automatically build and deploy your application
+
+### Deploy to Railway
+
+1. **Create a new project** on [Railway](https://railway.app)
+2. **Connect your GitHub repository**
+3. **Configure deployment:**
+   - Railway will automatically detect Python and install from `requirements.txt`
+   - Start command: `python main.py`
+   - Port: FastHTML automatically uses the PORT environment variable
+
+### Deploy to Heroku
+
+1. **Create a Procfile** in the fasthtml-ui directory:
+   ```
+   web: python main.py
+   ```
+2. **Deploy using Heroku CLI:**
+   ```bash
+   heroku create your-app-name
+   git subtree push --prefix fasthtml-ui heroku main
+   ```
+
+### General Production Notes
+
+- FastHTML automatically binds to `0.0.0.0` and uses the `PORT` environment variable when available
+- The application serves static files from the `static/` directory
+- All major Python hosting platforms (Render, Railway, Heroku, Fly.io) support FastHTML applications
+- No additional configuration files (like `render.yaml`) are needed - the platform will detect Python and use `requirements.txt`
 
 ## Key Components
 
